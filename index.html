@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <style>
 body {
   margin: 0;
@@ -30,6 +31,14 @@ body {
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}
+.btn {
+  background-color: hsl(206, 78%, 2%);
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 </style>
@@ -68,15 +77,26 @@ body {
 }
 
 .flip-box-front {
-  background-color: hsl(113, 60%, 65%);
+  background-color: #a4f19a;
   color: black;
 }
 
 .flip-box-back {
-  background-color: hwb(56 38% 2%);
+  background-color: rgb(139, 134, 180);
   color: #080000;
   transform: rotateY(180deg);
 }
+ #heading{
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-family: "Sofia", sans-serif;
+}
+#img{
+  width: 100%;
+  height: 55%;
+}
+
+
 </style>
 <style>
   * {box-sizing: border-box}
@@ -92,6 +112,16 @@ body {
     padding-bottom: 0px;
     color: hsl(0, 56%, 4%);
   }
+  #h1{
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-family: "Sofia", sans-serif;
+}
+#skill {
+  background-color: white;
+}
+
+  
   
   .html {width: 90%; background-color: hsl(261, 82%, 73%);}
   .css {width: 80%; background-color: #2196F3;}
@@ -132,7 +162,7 @@ body {
       }
       
       input[type=submit] {
-        background-color: hsl(271, 95%, 34%);
+        background-color: hwb(270 0% 97%);
         color: white;
         padding: 12px 20px;
         border: none;
@@ -140,13 +170,13 @@ body {
       }
       
       input[type=submit]:hover {
-        background-color: #45a049;
+        background-color: rgb(214, 120, 31);
       }
       
       /* Style the container/contact section */
       .container {
         border-radius: 5px;
-        background-color: #42974d;
+        background-color: #92e69d;
         padding: 10px;
       }
       
@@ -175,29 +205,40 @@ body {
       </style>
       <style>
        hr.border {
-  border: 3px dashed #69db69;
+  border: 3px dashed hsl(120, 56%, 79%);
   border-radius: 5px;
 } 
       </style>
       <style>
        .footer {
-   position: fixed;
+   position: relative;
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: rgb(19, 3, 3);
+   background-color: #0a0a0a;
    color: white;
    text-align: center;
+   padding-top: 2px;
    
 } 
+#a {
+  text-decoration: solid;
+  color: #008CBA;
+text-align: center;
+
+}
+#p {
+  
+  text-align: left;
+}
       </style>
       <style>
         .fa {
           padding: 5px;
           font-size: 30px;
           width: 25px;
-          text-align:start;
-          text-decoration: none;
+          text-align: right;
+          text-decoration: solid;
           margin: 2px 2px;
         }
         
@@ -222,6 +263,7 @@ body {
         color: white;
         }
         </style>
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       
       
@@ -233,56 +275,61 @@ body {
   <a href="#projects">Projects</a>
   <a href="#about">About</a>
   <a href="#contact">Contact</a>
+  <button class="btn"><i class="fa fa-download"></i> Download CV</button>
+
 </div>
 
 <div class="flip-box">
   <div class="flip-box-inner">
     <div class="flip-box-front">
-      <p><h3>Hello, I am Anju Kumari</h3></p><p><h5>I am a passonate and responsible front end developer with 1 year experience.<br>Skilled in developing heighly responsive websites and mobile application</h5></p>
-    
+      <p><h1 id="heading">Hello, I am Anju Kumari</h1></p><p><h3>I am a passonate and responsible front end developer with 1 year experience.<br>Skilled in developing heighly responsive websites and mobile application</h3></p>
+      <img src="17.jpg" alt="Nature" id="img" width="300" height="200">
+
     </div>
     <div class="flip-box-back">
-      <h3>My Skills:</h3><h5><ul style="list-style-type:disc;">
+      <h1 id="h1">My Skills:</h1><h3><ul style="list-style-type:disc;">
         <li>HTML</li>
         <li>CSS</li>
         <li>Javascript</li>
         <li>Python</li>
         <li>Data science</li>
-      </ul>  </h5>
+      </ul>  </h3>
     </div>
   </div>
 </div>
 
 
 <hr class="border">
-<h1>My Skills</h1>
+<div  id="skill">
+<h1 id="h1">My Skills</h1>
 
 <p>HTML</p>
-<div class="container">
+<div class="skill">
   <div class="skills html">90%</div>
 </div>
 
 <p>CSS</p>
-<div class="container">
+<div class="skill">
   <div class="skills css">80%</div>
 </div>
 
 <p>JavaScript</p>
-<div class="container">
+<div class="skill">
   <div class="skills js">65%</div>
 </div>
 
 <p>Python</p>
-<div class="container">
+<div class="skill">
   <div class="skills python">60%</div>
 </div>
 
 <p>datascience</p>
-<div class="container">
+<div class="skill">
   <div class="skills datascience">55%</div>
 </div>
+</div>
 
-<h1>Projects:</h1>
+<h1 id="h1">Projects:</h1>
 <p>I Have completed below projects.</p>
 
 <div class="col-container">
@@ -296,6 +343,7 @@ body {
     <p>Coming Soon...<br><br><br><br><br></p>
     
   </div>
+  
 
   <div class="col" style="background:rgb(97, 133, 209)">
     <h2>Project 3</h2>
@@ -305,7 +353,7 @@ body {
 </div>
 <div class="container">
   <div style="text-align:center">
-    <h2>Contact Us</h2>
+    <h2 id="h1">Contact Us</h2>
     <p>Swing by for a cup of coffee, or leave us a message:</p>
   </div>
   <div class="row">
@@ -318,7 +366,7 @@ body {
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
         <label for="country">Country</label>
         <select id="country" name="country">
-          <option value="australia">Australia</option>
+          <option value="australia">India</option>
           <option value="canada">Canada</option>
           <option value="usa">USA</option>
         </select>
@@ -330,17 +378,17 @@ body {
   </div>
 </div>
 
-<h2>Fixed/Sticky Footer Example</h2>
-<p>The footer is placed at the bottom of the page.</p>
+
+<hr class="border">
 
 <div class="footer">
   
-  <p>Author: Anju Kumari</p>
-  <p><a href="anju.ranjeetpura@gmail.com" >anju.ranjeetpura @gmail.com</a></p>
-  <a href="#" class="fa fa-facebook"></a>
-  <a href="#" class="fa fa-linkedin"></a>
-  <a href="#" class="fa fa-github"></a>
-  <a href="#" class="fa fa-telegram"></a>
+  <p id="p">Author: Anju Kumari</p>
+  <p id="p"><a href="anju.ranjeetpura@gmail.com" >anju.ranjeetpura @gmail.com</a></p>
+  <a id="a" href="#" class="fa fa-facebook"></a>
+  <a id="a" href="#" class="fa fa-linkedin"></a>
+  <a id="a" href="#" class="fa fa-github"></a>
+  <a id="a" href="#" class="fa fa-telegram"></a>
 
 
 </div>
